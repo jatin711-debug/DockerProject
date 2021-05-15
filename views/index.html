@@ -9,6 +9,20 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet" type="text/css">
     </head>
 <body>
+    <!-- <script src="../chatbotModel/IBMchatbot.js"></script> -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "0c51b9ce-3a51-45d9-ac39-71e79192e68e", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "abc6cbe6-db99-47fa-a6c0-8fad94138765", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
     <nav class="navbar navbar-dark bg-dark navbar-static-top navbar-expand-md">
     <div class="container">
     <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
